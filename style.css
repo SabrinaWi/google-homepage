@@ -1,0 +1,44 @@
+body {
+  
+}
+
+nav {
+    display: grid;
+    position: relative;
+    top: 0px;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+    "nLeft nRight";
+    
+}
+
+.navLeft {
+    grid-area: nLeft;
+    justify-self: start;
+}
+
+.navRight {
+    grid-area: nRight;  
+    justify-self: end;
+}
+
+footer {
+    display: grid;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+    "Left Right";
+    
+}
+
+.FootLeft {
+    grid-area: Left;
+    justify-self: start;
+}
+
+.FootRight {
+    grid-area: Right;  
+    justify-self: end;
+}
