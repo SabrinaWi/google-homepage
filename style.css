@@ -1,7 +1,3 @@
-body {
-  
-}
-
 nav {
     display: grid;
     position: relative;
@@ -21,6 +17,34 @@ nav {
     grid-area: nRight;  
     justify-self: end;
 }
+.centered {
+    display: block;
+    margin: auto;
+}
+
+form {
+    text-align: center;
+}
+
+#clck  {display: grid;
+position: relative;
+width: 100%;
+grid-template-columns: auto auto;
+grid-template-areas:
+"Search Lucky";
+justify-items: center;
+    }
+
+    #srchbttn {
+        grid-area: Search;
+        justify-self: end;
+    }
+    
+    #lckbttn {
+        grid-area: Lucky;  
+        justify-self: start;
+    }
+
 
 footer {
     display: grid;
@@ -33,12 +57,12 @@ footer {
     
 }
 
-.FootLeft {
+.footLeft {
     grid-area: Left;
     justify-self: start;
 }
 
-.FootRight {
+.footRight {
     grid-area: Right;  
     justify-self: end;
 }
