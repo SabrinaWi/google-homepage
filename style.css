@@ -1,3 +1,4 @@
+/* The nav bar */
 nav {
     display: grid;
     position: relative;
@@ -8,59 +9,98 @@ nav {
     
 }
 
-.navLeft {
+/* Left side of nav bar positioning */
+.navLeft { 
     grid-area: nLeft;
     justify-self: start;
 }
 
+/* Right side of nav bar positioning */
 .navRight {
     grid-area: nRight;  
     justify-self: end;
 }
+
+/* The logo image, some values grabbed from original Google page */
+
+#logo {
+    height: 92px;
+    width: 272px;
+    padding-top: 100px;
+}
+
+/* I made this class to center the Google logo image. */
 .centered {
     display: block;
     margin: auto;
 }
 
+
+/* Centering the form element (search bar and buttons) */
+
 form {
     text-align: center;
 }
 
-#clck  {display: grid;
-position: relative;
-width: 100%;
-grid-template-columns: auto auto;
-grid-template-areas:
-"Search Lucky";
-justify-items: center;
+/* Search bar specifications ()I didn't want to grab too much from the Google page, so I made up values until it looked good to me) */
+
+#searchbar {
+    width: 450px;
+    height: 30px;
+    margin: auto;
+    border-radius: 30px;
+    border-color: rgb(239, 239, 239);
+    border-width: 1px;
+}
+
+/* This id is supposed to help with positioning the 2 buttons */
+
+#clck  {
+    display: grid;
+    position: relative;
+    width: 100%;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+    "Search Lucky";
+    justify-items: center;
     }
+
+    /* Search button positioning*/
 
     #srchbttn {
         grid-area: Search;
         justify-self: end;
     }
+
+/* Lucky button positioning */
     
     #lckbttn {
         grid-area: Lucky;  
         justify-self: start;
     }
 
+/* The footer starts here */
 
 footer {
     display: grid;
     position: fixed;
     bottom: 0px;
     width: 100%;
+    background-color: #f2f2f2;
     grid-template-columns: auto auto;
     grid-template-areas:
     "Left Right";
     
 }
 
+/* Left side of footer positioning */
+
 .footLeft {
     grid-area: Left;
     justify-self: start;
 }
+
+/* Right side of footer positioning */
 
 .footRight {
     grid-area: Right;  
