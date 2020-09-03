@@ -2,6 +2,22 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Links in nav and footer */
+
+a {
+    padding-left: 15px;
+    padding-right: 10px;
+    text-decoration: none;
+    color: #5F6368;
+}
+
+a:hover {
+    padding-left: 15px;
+    padding-right: 10px;
+    text-decoration: underline;
+    color: #5F6368;
+}
+
 /* The nav bar */
 nav {
     display: grid;
@@ -10,8 +26,11 @@ nav {
     grid-template-columns: auto auto;
     grid-template-areas:
     "nLeft nRight";
-    
+    font-size: 13px;
+    padding-top: 20px;
 }
+
+
 
 /* Left side of nav bar positioning */
 .navLeft { 
@@ -98,7 +117,19 @@ form {
     border-radius: 4px;
     margin: 11px 4px;
     height: 36px;
+}
 
+.bttns:hover {
+    font-size: 14px;
+    text-align: center;
+    padding: 0 16px;
+    color: #5F6368;
+    border-radius: 4px;
+    margin: 11px 4px;
+    height: 36px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
 }
 
 /* The footer starts here */
@@ -108,11 +139,14 @@ footer {
     position: fixed;
     bottom: 0px;
     width: 100%;
+    color: #5F6368;
     background-color: #f2f2f2;
     grid-template-columns: auto auto;
     grid-template-areas:
     "Left Right";
-    
+    font-size: 15px;
+    line-height: 40px;
+    border-top: 1px solid #e4e4e4;
 }
 
 /* Left side of footer positioning */
