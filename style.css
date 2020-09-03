@@ -1,3 +1,7 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
 /* The nav bar */
 nav {
     display: grid;
@@ -52,7 +56,7 @@ form {
     border-color: rgb(239, 239, 239);
     border-width: 1px;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 /* This id is supposed to help with positioning the 2 buttons */
@@ -62,6 +66,7 @@ form {
     position: relative;
     width: 100%;
     grid-template-columns: auto auto;
+    grid-column-gap: 10px;
     grid-template-areas:
     "Search Lucky";
     justify-items: center;
@@ -80,6 +85,21 @@ form {
         grid-area: Lucky;  
         justify-self: start;
     }
+
+/* Styling the buttons */
+
+.bttns {
+    font-size: 14px;
+    text-align: center;
+    padding: 0 16px;
+    border: 1px solid #f2f2f2;
+    background-color: #f2f2f2;
+    color: #5F6368;
+    border-radius: 4px;
+    margin: 11px 4px;
+    height: 36px;
+
+}
 
 /* The footer starts here */
 
