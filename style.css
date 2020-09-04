@@ -27,7 +27,7 @@ nav {
     grid-template-areas:
     "nLeft nRight";
     font-size: 13px;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 
@@ -42,6 +42,30 @@ nav {
 .navRight {
     grid-area: nRight;  
     justify-self: end;
+    margin-right: 15px;
+}
+
+/* The apps icon - I wanted to make a tooltip saying "Google Apps", but it looks a bit more 
+complex than I thought and I'd like to learn it properly instead of rushing through it, so... next time*/
+
+#apps {
+    position: relative;
+    top: 8px;
+}
+
+/* The Sign In area */
+
+#sgn {
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    padding: 0 12px;
+    border: 1px solid #4285f4;
+    background-color: #4285f4;
+    color: #fff;
+    border-radius: 2px;
+    margin: 11px 4px;
+    height: 28px;
 }
 
 /* The logo image, some values grabbed from original Google page */
